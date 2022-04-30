@@ -1,0 +1,903 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.heading h2 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 32px;
+    color: #0093DD;
+    text-transform: capitalize;
+}
+
+.heading .icon {
+    position: relative;
+    z-index: 1;
+}
+
+.heading .icon i {
+    color: #0093DD;
+}
+
+.heading .icon::before {
+    position: absolute;
+    content: '';
+    top: 12px;
+    left: 460px;
+    width: 80px;
+    height: 2px;
+    background: #000;
+    z-index: -1;
+}
+
+.heading .icon::after {
+    position: absolute;
+    content: '';
+    top: 12px;
+    right: 460px;
+    width: 80px;
+    height: 2px;
+    background: #000;
+    z-index: -1;
+}
+
+/* ====== common css ends ====== */
+
+
+.navbar {
+    background: #f1f1f1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #0093DD;
+    text-transform: capitalize;
+    transition: all linear 0.3s;
+
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #E77817;
+}
+
+.navbar-light .navbar-nav .active > .nav-link {
+    color: #E77817;
+}
+
+/*
+.navbar-light .navbar-nav .nav-link:focus{
+    color: #E77817;
+}
+*/
+
+
+.header_button li {
+    float: left;
+    margin-top: 10px;
+}
+
+.header_button li .head_btn {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #0093DD;
+    border: 1px solid #0093DD;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin-left: 20px;
+    text-transform: capitalize;
+    transition: all linear 0.3s;
+}
+
+.header_button li .head_btn:hover {
+    color: #fff;
+    background: #0093DD;
+}
+
+.header_button li:last-child .head_btn {
+    color: #fff;
+    background: #0093DD;
+}
+
+.header_button li:last-child .head_btn:hover {
+    color: #0093DD;
+    background: transparent;
+}
+
+
+/* ====== nabvar css ends ====== */
+
+#banner {
+    background: url(../images/banner_bg.jpg) no-repeat center/cover;
+    position: relative;
+    z-index: 1;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+#banner::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.40);
+    z-index: -1;
+}
+
+#banner .banner_text h1 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 52px;
+    color: #0093DD;
+}
+
+#banner .banner_text h1 span{
+    color: #E77817;
+}
+
+#banner .banner_text p {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+#banner .banner_text a {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+    color: #fff;
+    padding: 10px 15px;
+    background: #0093DD;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: 1px solid #0093DD;
+    transition: all linear 0.3s;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+#banner .banner_text a:hover {
+    background: #E77817;
+    border-color: #E77817;
+}
+
+/* ====== banner css ends ====== */
+
+#service {
+    padding-top: 80px;
+    background: #f1f1f1;
+    padding-bottom: 80px;
+}
+
+#service .service_item {
+    background: #fff;
+    transition: all linear 0.3s;
+    border-radius: 5px;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+#service .service_item:hover {
+    background: #0093DD;
+}
+
+#service .service_item.active {
+    background: #0093DD;
+}
+
+#service .service_item i {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;
+    color: #0093DD;
+    background: #F7FAFD;
+    border-radius: 50%;
+
+}
+
+#service .service_item h4 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #0093DD;
+    text-transform: capitalize;
+    transition: all linear 0.3s;
+    margin-top: 15px;
+}
+
+#service .service_item:hover h4 {
+    color: #fff;
+}
+
+#service .service_item.active h4 {
+    color: #fff;
+}
+
+#service .service_item p {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #353535;
+    text-transform: capitalize;
+    padding: 0 6px;
+    transition: all linear 0.3s;
+    line-height: 24px;
+    margin-top: 15px;
+}
+
+#service .service_item:hover p {
+    color: #fff;
+}
+
+#service .service_item.active p {
+    color: #fff;
+}
+
+/* ====== service css ends ====== */
+
+#portfolio {
+    padding-top: 80px;
+
+}
+
+#portfolio .port_menu {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#portfolio .port_menu ul li {
+    display: inline-block;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #353535;
+    text-transform: capitalize;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 6px;
+    transition: all linear 0.3s;
+}
+
+#portfolio .port_menu ul li:hover {
+    background: #0093DD;
+    color: #fff;
+}
+
+#portfolio .port_menu ul li.active {
+    background: #0093DD;
+    color: #fff;
+}
+
+#portfolio .gallery {
+    margin-top: 50px;
+}
+
+#portfolio .gallery .gallery_item {
+    position: relative;
+    overflow: hidden;
+}
+
+#portfolio .gallery .gallery_item img {
+    transform: scale(1);
+    transition: all linear 0.3s;
+}
+
+#portfolio .gallery .gallery_item:hover img {
+    transform: scale(1.2)
+}
+
+#portfolio .gallery .gallery_item.active img {
+    transform: scale(1.2)
+}
+
+#portfolio .gallery .gallery_item .gall_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    opacity: 0;
+    transition: all linear 0.3s;
+}
+
+#portfolio .gallery .gallery_item:hover .gall_overlay {
+    opacity: 1;
+}
+
+#portfolio .gallery .gallery_item.active .gall_overlay {
+    opacity: 1;
+}
+
+#portfolio .gallery .gallery_item .gall_overlay .overlay_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all linear 0.5s;
+}
+
+#portfolio .gallery .gallery_item:hover .gall_overlay .overlay_text {
+    opacity: 1;
+    margin-top: 15px;
+}
+
+#portfolio .gallery .gallery_item.active .gall_overlay .overlay_text {
+    opacity: 1;
+    margin-top: 15px;
+}
+
+#portfolio .gallery .gallery_item .gall_overlay .overlay_text h4 a {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+}
+
+#portfolio .gallery .gallery_item .gall_overlay .overlay_text a {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+}
+
+/* ====== portfolio css ends ====== */
+
+#blog {
+    background: #fff;
+    margin-top: 90px;
+}
+
+#blog .blog_item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+#blog .blog_item img {
+    transform: scale(1);
+    transition: all linear 0.2s;
+
+}
+
+#blog .blog_item:hover img {
+    transform: scale(1.2);
+}
+
+#blog .blog_item.active img {
+    transform: scale(1.2);
+}
+
+#blog .blog_item .img_overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all linear .3s;
+
+}
+
+#blog .blog_item .img_overlay::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgb(99, 201, 255, 0.3) 0, #000);
+    opacity: 0;
+    transition: all linear .3s;
+}
+
+#blog .blog_item:hover .img_overlay::after {
+    opacity: 1;
+}
+
+#blog .blog_item.active .img_overlay::after {
+    opacity: 1;
+}
+
+#blog .blog_item .img_overlay .overlay_content {
+    position: absolute;
+    left: 0;
+    bottom: -92px;
+    padding: 50px 35px;
+    z-index: 1;
+    width: 100%;
+    transition: all linear .2s;
+
+}
+
+#blog .blog_item:hover .img_overlay .overlay_content {
+    bottom: 0;
+}
+
+#blog .blog_item.active .img_overlay .overlay_content {
+    bottom: 0;
+}
+
+#blog .blog_item .img_overlay .overlay_content::before {
+    position: absolute;
+    content: '';
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, transparent), color-stop(70%, #000));
+    background: -webkit-linear-gradient(top, transparent, #000 70%);
+    background: linear-gradient(180deg, transparent 0, #000 70%);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    z-index: -1;
+}
+
+#blog .blog_item .img_overlay .overlay_content p {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+#blog .blog_item .img_overlay .overlay_content h4 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: #fff;
+    line-height: 36px;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+}
+
+#blog .blog_item .img_overlay .overlay_content a {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    border: 1px solid #0093DD;
+    padding: 8px 20px;
+    border-radius: 5px;
+    transition: all linear .3s;
+}
+
+#blog .blog_item .img_overlay .overlay_content a:hover {
+    background: #0093DD;
+}
+
+#blog .blog_item.active .img_overlay .overlay_content a {
+    background: #0093DD;
+}
+
+/* ====== blog css ends ====== */
+
+#team {
+    padding-top: 80px;
+    background: #f1f1f1;
+    padding-bottom: 50px;
+}
+
+#team .team_item {
+    margin-top: 60px;
+}
+
+#team .team_item .team_content {
+    position: relative;
+    background: #fff;
+    transition: all linear 0.3s;
+    padding-top: 10px;
+    height: 110px;
+    position: relative;
+    z-index: 1;
+}
+
+#team .team_item .team_content::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(to right, #0093DD 0%, #23ced5 51%, #0093DD 100%);
+    z-index: -1;
+    transition: all linear 0.3s;
+}
+
+#team .team_item:hover .team_content::after {
+    height: 100%;
+}
+
+#team .team_item.active .team_content::after {
+    height: 100%;
+}
+
+#team .team_item .team_content h4 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #222;
+    transition: all linear 0.3s;
+    padding-top: 10px;
+}
+
+#team .team_item:hover .team_content h4 {
+    color: #fff;
+    padding-top: 0
+}
+
+#team .team_item.active .team_content h4 {
+    color: #fff;
+    padding-top: 0
+}
+
+#team .team_item .team_content p {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #222;
+    margin-bottom: 10px;
+    transition: all linear 0.3s;
+}
+
+#team .team_item:hover .team_content p {
+    color: #fff;
+}
+
+#team .team_item.active .team_content p {
+    color: #fff;
+}
+
+#team .team_item .team_content ul li {
+    display: inline-block;
+}
+
+#team .team_item .team_content ul li a {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 4px;
+    color: #fff;
+    display: inline-block;
+    margin: 0 4px;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: all linear 0.3s;
+    visibility: hidden;
+}
+
+#team .team_item .team_content ul li a:hover {
+    background: #0093DD;
+}
+
+#team .team_item.active .team_content ul li a {
+    background: #0093DD;
+}
+
+#team .team_item:hover .team_content ul li a {
+    transform: translateY(0px);
+    opacity: 1;
+    visibility: visible;
+
+}
+
+#team .team_item.active .team_content ul li a {
+    transform: translateY(0px);
+    opacity: 1;
+    visibility: visible;
+
+}
+
+/* ====== team css ends ====== */
+
+#testimonial {
+    background: #f1f1f1;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#testimonial .testimonial_item {
+    margin-top: 80px;
+}
+
+#testimonial .testimonial_item .item_content {
+    position: relative;
+    z-index: 1;
+}
+
+#testimonial .testimonial_item .item_content::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 12px;
+    width: 1px;
+    height: 100%;
+    background: #E77817;
+    z-index: -1;
+}
+
+#testimonial .testimonial_item .item_content .client_text {
+    position: relative;
+}
+
+#testimonial .testimonial_item .item_content .client_text i {
+    color: #E77817;
+    font-size: 22px;
+}
+
+#testimonial .testimonial_item .item_content .client_text i.right_pos {
+    position: absolute;
+    top: auto;
+    bottom: -20px;
+    right: 25px;
+}
+
+#testimonial .testimonial_item .item_content .client_text p {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #222;
+    position: relative;
+    z-index: 1;
+    padding-right: 30px;
+}
+
+
+#testimonial .testimonial_item .item_content .client_details img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #E77817;
+    float: left;
+    margin-right: 20px;
+}
+
+#testimonial .testimonial_item .item_content .client_details h4 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    color: #222;
+    display: inline-block;
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+
+#testimonial .testimonial_item .item_content .client_details p {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #222;
+    text-transform: capitalize;
+    margin-left: 20px;
+}
+
+/* ====== testimonial css ends ====== */
+
+#get_touch {
+    margin-top: 80px;
+}
+
+#get_touch .news_part {
+    margin-top: 92px;
+}
+
+#get_touch .news_part .input-group .form-control {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #999;
+    font-style: italic;
+    border: 1px solid #ffffff;
+    background: #ffffff;
+    box-shadow: 0px 7px 20px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 20px 0;
+    padding-left: 20px;
+}
+
+#get_touch .news_part textarea {
+    margin-top: 20px;
+    resize: none;
+    margin-bottom: 30px;
+}
+
+#get_touch .news_part .news_btn button {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    background: linear-gradient(to right, #0093DD, #3abdff);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 30px;
+    color: #ffffff;
+}
+
+#get_touch .news_part .news_btn button:hover {
+    background: linear-gradient(to right, #3abdff, #0093DD);
+}
+
+#get_touch .map_area {
+    margin-top: 60px;
+}
+
+
+
+/* ====== get_touch css ends ====== */
+
+#contact {
+    background: #f5f5f5;
+    padding: 50px 0;
+    margin-top: 100px;
+}
+
+#contact .heading{
+    margin-bottom: 30px;
+}
+
+#contact p {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    padding-top: 30px;
+    line-height: 24px;
+}
+
+#contact h3 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    color: #E77817;
+    text-transform: uppercase;
+    padding-bottom: 36px;
+    margin-top: 15px;
+}
+
+#contact .ftr_con a {
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    transition: all linear .3s;
+    display: inline-block;
+    color: #0093DD;
+}
+
+#contact .ftr_con ul li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+
+#contact .ftr_con ul li i {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    font-size: 16px;
+    color: #0093DD;
+}
+
+#contact .ftr_con a:hover,
+#contact .footer_menu a:hover {
+    color: #E77817;
+    padding-left: 5px;
+}
+
+#contact .footer_menu a {
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    transition: all linear .3s;
+    display: inline-block;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    color: #0093DD;
+}
+
+
+#contact .flow .twit_part a{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #0093DD;
+    padding-bottom: 5px;
+    padding-left: 25px;
+    position: relative;
+    display: block;
+    transition: all linear 0.3s;
+}
+
+#contact .flow .twit_part a:hover{
+    color: #E77817;
+}
+
+#contact .flow .twit_part .a_end{
+    padding-bottom: 0;
+    
+}
+
+#contact .flow .twit_part a i{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 18px;
+    color: #1da1f2;
+}
+
+#contact .social_icons h3{
+    padding-bottom: 10px;
+}
+
+#contact .social_icons ul li {
+    float: left;
+}
+
+#contact .social_icons ul li a {
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    line-height: 35px;
+    text-align: center;
+    display: block;
+    color: #fff;
+    background: #0093DD;
+    margin-right: 25px;
+    transition: all linear 0.3s;
+}
+
+#contact .social_icons ul li a:hover {
+    background: #E77817;
+}
+
+#contact .social_icons ul li a.active {
+    background: #E77817;
+}
+
+
+/* ====== footer css ends ====== */
+#footer {
+    background: #f5f5f5;
+    border-top: 1px solid #dbdbdb;
+    padding-top: 50px;
+}
+
+#footer p {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #444444;
+}
+
+/* ===== footer css end ===== */

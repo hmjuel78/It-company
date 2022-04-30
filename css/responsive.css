@@ -1,0 +1,107 @@
+/* extra small device */
+
+/* ====================== */
+@media (max-width: 575px) {
+
+    .heading h2{
+        font-size: 22px;
+    }
+    .navbar{
+        position: absolute;
+    }
+
+    #banner{
+        padding-bottom: 80px;
+    }
+    #banner .banner_text h1{
+        font-size: 32px;
+    }
+
+    .heading .icon,
+    .heading .icon::before,
+    .heading .icon::after{
+        display: none;
+    }
+
+    #get_touch .news_part .input-group .form-control{
+        margin-bottom: 20px;
+    }
+
+    #contact .social_icons ul li a{
+        margin-right: 20px;
+    }
+}
+
+
+
+
+/* for sm device */
+/* ====================== */
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+    .heading h2{
+        font-size: 22px;
+    }
+    .navbar{
+        position: absolute;
+    }
+
+    #banner{
+        padding-bottom: 80px;
+    }
+    #banner .banner_text h1{
+        font-size: 32px;
+    }
+
+    .heading .icon,
+    .heading .icon::before,
+    .heading .icon::after{
+        display: none;
+    }
+
+    #get_touch .news_part .input-group .form-control{
+        margin-bottom: 20px;
+    }
+
+    #contact .social_icons ul li a{
+        margin-right: 20px;
+    }
+   
+}
+
+
+
+/* for md device */
+/* ====================== */
+
+@media (min-width: 767px) and (max-width: 991px) {
+
+    .heading .icon::before{
+        left: 35%;
+    }
+    .heading .icon::after{
+        right: 35%;
+    }
+    
+}
+
+
+
+/* for lg device */
+/* ====================== */
+
+@media (min-width: 991px) and (max-width: 1199px) {
+    /* index file start */
+
+    /* index file end */
+}
+
+/* for xl device */
+/* ====================== */
+
+@media (min-width: 1200px) {
+    /* index file start */
+
+    /* index file end */
+}
